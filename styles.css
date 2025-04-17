@@ -1,0 +1,315 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+/* Theme Colors */
+body.green { background-color: #e8f5e9; }
+body.blue { background-color: #e3f2fd; }
+body.pink { background-color: #fce4ec; }
+body.yellow { background-color: #fffde7; }
+body.purple { background-color: #f3e5f5; }
+body.orange { background-color: #fff3e0; }
+body.cyan { background-color: #e0f7fa; }
+body.red { background-color: #ffebee; }
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 600px;
+    max-width: 90%;
+    margin: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Theme-specific container background */
+body.green .container { background: #f1f8e9; }
+body.blue .container { background: #e8f5fd; }
+body.pink .container { background: #f8e1ea; }
+body.yellow .container { background: #fff9c4; }
+body.purple .container { background: #f3e8ff; }
+body.orange .container { background: #ffedd5; }
+body.cyan .container { background: #e0f7fa; }
+body.red .container { background: #ffebee; }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+body.green h1 { color: #2e7d32; }
+body.blue h1 { color: #1565c0; }
+body.pink h1 { color: #ad1457; }
+body.yellow h1 { color: #f9a825; }
+body.purple h1 { color: #6a1b9a; }
+body.orange h1 { color: #ef6c00; }
+body.cyan h1 { color: #00838f; }
+body.red h1 { color: #c62828; }
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #b3cde0;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+input:hover, select:hover {
+    border-color: #90caf9;
+    transform: scale(1.02);
+}
+
+input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+}
+
+input[type="datetime-local"] {
+    min-width: 180px;
+    max-width: 100%;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button colors contrasting with themes */
+body.green button { background-color: #e91e63; }
+body.blue button { background-color: #f57c00; }
+body.pink button { background-color: #388e3c; }
+body.yellow button { background-color: #d81b60; }
+body.purple button { background-color: #0288d1; }
+body.orange button { background-color: #6a1b9a; }
+body.cyan button { background-color: #d81b60; }
+body.red button { background-color: #388e3c; }
+
+button:hover {
+    transform: scale(1.05);
+}
+
+body.green button:hover { background-color: #c2185b; }
+body.blue button:hover { background-color: #ef6c00; }
+body.pink button:hover { background-color: #2e7d32; }
+body.yellow button:hover { background-color: #c2185b; }
+body.purple button:hover { background-color: #0277bd; }
+body.orange button:hover { background-color: #4a148c; }
+body.cyan button:hover { background-color: #c2185b; }
+body.red button:hover { background-color: #2e7d32; }
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters button {
+    flex: 1;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filters button:hover {
+    transform: scale(1.05);
+}
+
+.search-section {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+#searchInput {
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #dfe6e9;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    animation: fadeIn 0.5s ease-in;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+body.green li { border-bottom: 1px solid #c8e6c9; }
+body.blue li { border-bottom: 1px solid #bbdefb; }
+body.pink li { border-bottom: 1px solid #f8bbd0; }
+body.yellow li { border-bottom: 1px solid #fff9c4; }
+body.purple li { border-bottom: 1px solid #e1bee7; }
+body.orange li { border-bottom: 1px solid #ffccbc; }
+body.cyan li { border-bottom: 1px solid #b2ebf2; }
+body.red li { border-bottom: 1px solid #ffcdd2; }
+
+li.completed span {
+    text-decoration: line-through;
+    color: #95a5a6;
+}
+
+.actions button {
+    margin-left: 8px;
+}
+
+.priority-low { color: #2ecc71; }
+.priority-medium { color: #f1c40f; }
+.priority-high { color: #e74c3c; }
+
+.category-work { background: #e8f4f8; }
+.category-personal { background: #d4efdf; }
+.category-study { background: #fce4d6; }
+
+body.green .category-work { background: #dcedc8; }
+body.green .category-personal { background: #c5e1a5; }
+body.green .category-study { background: #aed581; }
+
+body.blue .category-work { background: #bbdefb; }
+body.blue .category-personal { background: #90caf9; }
+body.blue .category-study { background: #64b5f6; }
+
+body.pink .category-work { background: #f8bbd0; }
+body.pink .category-personal { background: #f48fb1; }
+body.pink .category-study { background: #f06292; }
+
+body.yellow .category-work { background: #fff9c4; }
+body.yellow .category-personal { background: #fff59d; }
+body.yellow .category-study { background: #fff176; }
+
+body.purple .category-work { background: #e1bee7; }
+body.purple .category-personal { background: #ce93d8; }
+body.purple .category-study { background: #ba68c8; }
+
+body.orange .category-work { background: #ffccbc; }
+body.orange .category-personal { background: #ffab91; }
+body.orange .category-study { background: #ff8a65; }
+
+body.cyan .category-work { background: #b2ebf2; }
+body.cyan .category-personal { background: #80deea; }
+body.cyan .category-study { background: #4dd0e1; }
+
+body.red .category-work { background: #ffcdd2; }
+body.red .category-personal { background: #ef9a9a; }
+body.red .category-study { background: #e57373; }
+
+.stats {
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    animation: slideIn 0.5s ease;
+}
+
+body.green .stats { background: #dcedc8; }
+body.blue .stats { background: #bbdefb; }
+body.pink .stats { background: #f8bbd0; }
+body.yellow .stats { background: #fff9c4; }
+body.purple .stats { background: #e1bee7; }
+body.orange .stats { background: #ffccbc; }
+body.cyan .stats { background: #b2ebf2; }
+body.red .stats { background: #ffcdd2; }
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Theme Selector */
+#themeSelect {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #b3cde0;
+    background: #ffffff;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+#themeSelect:hover {
+    transform: scale(1.02);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .input-section {
+        flex-direction: column;
+        gap: 8px;
+    }
+    input, select, button {
+        width: 100%;
+        max-width: 100%;
+    }
+    input[type="datetime-local"] {
+        width: 100%;
+    }
+    .filters {
+        flex-direction: column;
+        gap: 8px;
+    }
+    .filters button {
+        width: 100%;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .actions button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}

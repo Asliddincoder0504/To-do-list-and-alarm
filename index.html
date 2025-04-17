@@ -1,0 +1,126 @@
+<!-- <!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazifalar Meneferi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="green">
+    <div class="container">
+        <div class="header">
+            <h1>Vazifalar Meneferi</h1>
+            <select id="themeSelect" onchange="changeTheme()">
+                <option value="green">Yashil</option>
+                <option value="blue">Ko'k</option>
+                <option value="pink">Pushti</option>
+                <option value="yellow">Sariq</option>
+            </select>
+        </div>
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Yangi vazifa...">
+            <select id="priorityInput">
+                <option value="low">Past</option>
+                <option value="medium">O'rta</option>
+                <option value="high">Yuqori</option>
+            </select>
+            <select id="categoryInput">
+                <option value="work">Ish</option>
+                <option value="personal">Shaxsiy</option>
+                <option value="study">O'qish</option>
+            </select>
+            <input type="datetime-local" id="deadlineInput">
+            <button onclick="addTask()">Qo'shish</button>
+        </div>
+
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Vazifalarni qidirish...">
+        </div>
+
+        <div class="filters">
+            <button onclick="filterTasks('all')">Hammasi</button>
+            <button onclick="filterTasks('active')">Faol</button>
+            <button onclick="filterTasks('completed')">Bajarilgan</button>
+            <button onclick="clearCompleted()">Bajarilganlarni tozalash</button>
+        </div>
+
+        <div class="stats">
+            Jami: <span id="totalTasks">0</span> |
+            Faol: <span id="activeTasks">0</span> |
+            Bajarilgan: <span id="completedTasks">0</span>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <audio id="alarmSound" src="alarm.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazifalar Meneferi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="green">
+    <div class="container">
+        <div class="header">
+            <h1>Vazifalar Meneferi</h1>
+            <select id="themeSelect" onchange="changeTheme()">
+                <option value="green">Yashil</option>
+                <option value="blue">Ko'k</option>
+                <option value="pink">Pushti</option>
+                <option value="yellow">Sariq</option>
+                <option value="purple">Binafsha</option>
+                <option value="orange">To'q sariq</option>
+                <option value="cyan">Moviy</option>
+                <option value="red">Qizil</option>
+            </select>
+        </div>
+
+        <div class="input-section">
+            <input type="text" id="taskInput" placeholder="Yangi vazifa...">
+            <select id="priorityInput">
+                <option value="low">Past</option>
+                <option value="medium">O'rta</option>
+                <option value="high">Yuqori</option>
+            </select>
+            <select id="categoryInput">
+                <option value="work">Ish</option>
+                <option value="personal">Shaxsiy</option>
+                <option value="study">O'qish</option>
+            </select>
+            <input type="datetime-local" id="deadlineInput">
+            <button onclick="addTask()">Qo'shish</button>
+        </div>
+
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Vazifalarni qidirish...">
+        </div>
+
+        <div class="filters">
+            <button onclick="filterTasks('all')">Hammasi</button>
+            <button onclick="filterTasks('active')">Faol</button>
+            <button onclick="filterTasks('completed')">Bajarilgan</button>
+            <button onclick="clearCompleted()">Bajarilganlarni tozalash</button>
+        </div>
+
+        <div class="stats">
+            Jami: <span id="totalTasks">0</span> |
+            Faol: <span id="activeTasks">0</span> |
+            Bajarilgan: <span id="completedTasks">0</span>
+        </div>
+
+        <ul id="taskList"></ul>
+    </div>
+
+    <audio id="alarmSound" src="alarm.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
